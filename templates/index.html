@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AURABEAUTY: empresa de software y portal de investigación de mercado para AURABEAUTY.">
+  <title>AURABEAUTY | Tecnología que conecta contigo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light sticky-top nav-glass">
+  <div class="container">
+    <a class="navbar-brand brand" href="#inicio"><span class="brand-mark">A</span> AURABEAUTY<span class="brand-dot">.</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="#aurabeauty">AURABEAUTY</a></li>
+        <li class="nav-item"><a class="nav-link" href="#clientes">Clientes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+        <li class="nav-item"><a class="nav-link" href="#investigacion">Investigación</a></li>
+        <li class="nav-item"><a class="nav-link" href="#competencia">Competencia</a></li>
+        <li class="nav-item"><a class="btn btn-brand btn-sm ms-lg-2" href="#contacto">Contáctanos ↗</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header id="inicio" class="hero-section">
+  <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+  <div class="container position-relative">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <span class="eyebrow"><span class="eyebrow-dot"></span> SOFTWARE · INVESTIGACIÓN · INNOVACIÓN</span>
+        <h1>La tecnología también puede tener <em>esencia.</em></h1>
+        <p class="hero-copy">Diseñamos soluciones digitales útiles, cercanas y centradas en las personas. Conoce AURABEAUTY y nuestra propuesta de innovación: AURABEAUTY.</p>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a href="#aurabeauty" class="btn btn-brand btn-lg">Descubrir AURABEAUTY <span>↗</span></a>
+          <a href="#investigacion" class="btn btn-outline-brand btn-lg">Ver investigación</a>
+        </div>
+        <div class="hero-proof mt-5">
+          <div><strong>100</strong><span>respuestas de encuesta</span></div>
+          <div class="proof-line"></div>
+          <div><strong>3</strong><span>entrevistas organizadas</span></div>
+          <div class="proof-line"></div>
+          <div><strong>1</strong><span>propuesta integrada</span></div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="hero-visual">
+          <img class="hero-photo" src="{{ url_for('static', filename='images/aurabeauty-logo.jpeg') }}" alt="Logotipo de AURABEAUTY, tu esencia, tu brillo" onerror="this.style.display='none'">
+          <div class="visual-label"><span class="label-icon">✦</span><div><strong>Tu estilo, tus decisiones</strong><small>Una experiencia digital más personal</small></div></div>
+          <div class="floating-card card-top"><span class="floating-icon">✧</span><div><small>Experiencia</small><strong>Personalizada</strong></div></div>
+          <div class="floating-card card-bottom"><span class="floating-icon">♡</span><div><small>Proyecto principal</small><strong>AURABEAUTY</strong></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="servicios" class="section-pad">
+  <div class="container">
+    <div class="section-heading text-center mx-auto">
+      <span class="eyebrow">QUÉ HACEMOS</span><h2>Soluciones digitales con propósito.</h2>
+      <p>Convertimos necesidades reales en ideas tecnológicas claras, funcionales y preparadas para crecer.</p>
+    </div>
+    <div class="row g-4 mt-2">
+      <div class="col-md-4"><article class="service-card h-100"><div class="service-icon">⌘</div><h3>Desarrollo de software y páginas web</h3><p>Diseño y construcción de sitios responsivos, interfaces intuitivas y soluciones adaptadas a los objetivos de cada proyecto.</p><span class="service-tag">Desarrollo web</span></article></div>
+      <div class="col-md-4"><article class="service-card h-100"><div class="service-icon">↻</div><h3>Mantenimiento y soporte técnico</h3><p>Apoyo en la revisión, actualización y solución de inconvenientes técnicos para favorecer la continuidad de los sistemas.</p><span class="service-tag">Soporte</span></article></div>
+      <div class="col-md-4"><article class="service-card h-100"><div class="service-icon">⌕</div><h3>Auditoría y asesoría informática</h3><p>Identificación de oportunidades de mejora en procesos digitales, organización de requerimientos y orientación tecnológica.</p><span class="service-tag">Consultoría</span></article></div>
+    </div>
+  </div>
+</section>
+
+<section id="nosotros" class="section-pad section-soft">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5">
+        <span class="eyebrow">QUIÉNES SOMOS</span><h2>Ideas que se convierten en experiencias.</h2>
+        <p class="lead-copy">AURABEAUTY es la identidad empresarial del equipo que propone y desarrolla soluciones digitales. Este portal reúne la presentación corporativa y las evidencias del trabajo de campo para el análisis de mercado.</p>
+        <div class="brand-explainer"><span class="brand-mark big-mark">A</span><div><strong>AURABEAUTY</strong><p class="mb-0">Lema propuesto: “Tu esencia, tu brillo”. La letra A representa el inicio de una idea; los tonos rosa, vino y marfil comunican creatividad, confianza y claridad.</p></div></div>
+      </div>
+      <div class="col-lg-7">
+        <div class="mission-grid">
+          <article class="mission-card"><span class="mini-label">01 / MISIÓN</span><h3>Crear tecnología útil</h3><p>Desarrollar soluciones digitales que respondan a necesidades identificadas, faciliten procesos y mejoren la experiencia de las personas.</p></article>
+          <article class="mission-card"><span class="mini-label">02 / VISIÓN</span><h3>Crecer con innovación</h3><p>Consolidar una propuesta de software reconocida por su creatividad, responsabilidad, calidad y orientación al usuario.</p></article>
+          <article class="mission-card wide"><span class="mini-label">03 / VALORES</span><div class="value-pills"><span>Creatividad</span><span>Responsabilidad</span><span>Respeto</span><span>Trabajo en equipo</span><span>Innovación</span><span>Calidad</span></div></article>
+        </div>
+      </div>
+    </div>
+    <div class="team-wrap mt-5">
+      <div><span class="eyebrow">EQUIPO DE TRABAJO</span><h3>GAES 7</h3><p class="muted mb-0">Integrantes del equipo de proyecto.</p></div>
+      <div class="team-members"><div class="team-member"><span>G7</span><strong>GAES 7</strong><small>Equipo del proyecto</small></div></div>
+    </div>
+    <p class="small muted mt-3">La misión, visión y explicación de marca son propuestas de redacción para el sitio; el equipo puede ajustarlas según los acuerdos oficiales.</p>
+  </div>
+</section>
+
+<section id="aurabeauty" class="section-pad product-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 order-lg-2">
+        <img class="product-photo" src="{{ url_for('static', filename='images/referencia-ia-skincare.jpeg') }}" alt="Referencia visual de análisis y recomendaciones de cuidado facial" loading="lazy">
+      </div>
+      <div class="col-lg-6 order-lg-1">
+        <span class="eyebrow">PRODUCTO PRINCIPAL</span><h2>Conoce <em>AURABEAUTY.</em></h2>
+        <p class="lead-copy">Una propuesta de plataforma web que busca reunir moda, maquillaje, cuidado facial y accesorios, con recomendaciones ajustadas a las preferencias y necesidades de cada usuario.</p>
+        <p>El nombre une “AURA”, asociado con la esencia o identidad personal, y “BEAUTY”, belleza. La idea es que cada persona encuentre opciones con las que se sienta identificada.</p>
+        <div class="feature-list">
+          <div><span>✦</span><div><strong>Recomendaciones personalizadas</strong><p>Preferencias, estilo, ocasión y necesidades indicadas por el usuario.</p></div></div>
+          <div><span>✦</span><div><strong>Looks completos</strong><p>Explorar combinaciones de ropa, maquillaje y accesorios.</p></div></div>
+          <div><span>✦</span><div><strong>Comparación de productos</strong><p>Consultar características y precios cuando estén disponibles.</p></div></div>
+          <div><span>✦</span><div><strong>Asistente virtual</strong><p>Propuesta de orientación digital; requiere implementación y pruebas para considerarse funcional.</p></div></div>
+        </div>
+        <a class="btn btn-brand mt-2" href="#investigacion">Conocer el estudio de mercado ↗</a>
+      </div>
+    </div>
+    <div class="prototype-note mt-5"><span>ⓘ</span><p><strong>Estado del proyecto:</strong> las funciones descritas son la propuesta de AURABEAUTY. No se presentan como implementadas ni conectadas a tiendas hasta que el equipo las desarrolle y valide.</p></div>
+  </div>
+</section>
+
+<section id="clientes" class="section-pad section-dark">
+  <div class="container">
+    <div class="row align-items-end g-4">
+      <div class="col-lg-7"><span class="eyebrow eyebrow-light">A QUIÉN NOS DIRIGIMOS</span><h2>Diseñado alrededor de necesidades reales.</h2></div>
+      <div class="col-lg-5"><p class="dark-copy">El público potencial incluye personas interesadas en moda y cuidado personal, así como establecimientos que buscan mejorar la orientación a sus clientes. La investigación se enfoca en el mercado de Mosquera y Bogotá; las ubicaciones individuales deben documentarse con evidencias.</p></div>
+    </div>
+    <div class="row g-3 mt-3">
+      <div class="col-md-4"><div class="audience-card"><span>01</span><h3>Usuarios de belleza y moda</h3><p>Personas que desean encontrar productos compatibles con sus gustos, presupuesto y necesidades.</p></div></div>
+      <div class="col-md-4"><div class="audience-card"><span>02</span><h3>Emprendimientos</h3><p>Negocios que necesitan ahorrar tiempo al orientar a sus clientes y mostrar alternativas.</p></div></div>
+      <div class="col-md-4"><div class="audience-card"><span>03</span><h3>Tiendas especializadas</h3><p>Establecimientos de ropa, maquillaje y cuidado facial que pueden aportar conocimiento del mercado.</p></div></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="galeria" class="section-pad section-soft">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">IDENTIDAD VISUAL Y REFERENTES</span>
+      <h2>Así imaginamos <em>AURABEAUTY.</em></h2>
+      <p>Galería de imágenes aportadas por el equipo: registro del trabajo de campo y referentes visuales de la experiencia de belleza digital. Las imágenes de interfaces son referencias de inspiración, no funcionalidades ya implementadas.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4"><figure class="gallery-card"><img src="{{ url_for('static', filename='images/trabajo-campo-tienda.jpeg') }}" alt="Registro visual de una visita a un establecimiento de belleza" loading="lazy"><figcaption><strong>Trabajo de campo</strong><span>Registro visual aportado por el equipo.</span></figcaption></figure></div>
+      <div class="col-md-6 col-lg-4"><figure class="gallery-card"><img src="{{ url_for('static', filename='images/referencia-ia-skincare.jpeg') }}" alt="Referencia de asistente digital para recomendaciones de skincare" loading="lazy"><figcaption><strong>Asistente de belleza</strong><span>Referencia visual de recomendaciones personalizadas.</span></figcaption></figure></div>
+      <div class="col-md-6 col-lg-4"><figure class="gallery-card"><img src="{{ url_for('static', filename='images/referencia-analisis-facial.jpeg') }}" alt="Referencia de interfaz de análisis facial" loading="lazy"><figcaption><strong>Análisis facial</strong><span>Concepto de interfaz; no es diagnóstico médico.</span></figcaption></figure></div>
+      <div class="col-md-6 col-lg-4"><figure class="gallery-card"><img src="{{ url_for('static', filename='images/referencia-maquillaje-virtual.jpeg') }}" alt="Referencia de prueba virtual de maquillaje" loading="lazy"><figcaption><strong>Prueba virtual de maquillaje</strong><span>Idea para explorar estilos y productos.</span></figcaption></figure></div>
+      <div class="col-md-6 col-lg-4"><figure class="gallery-card"><img src="{{ url_for('static', filename='images/referencia-asistente-belleza.jpeg') }}" alt="Referencia de asistente de belleza con inteligencia artificial" loading="lazy"><figcaption><strong>Orientación personalizada</strong><span>Referencia de interacción digital.</span></figcaption></figure></div>
+      <div class="col-md-6 col-lg-4"><figure class="gallery-card"><img src="{{ url_for('static', filename='images/referencia-app-maquillaje.jpeg') }}" alt="Referencia de aplicación móvil de maquillaje personalizado" loading="lazy"><figcaption><strong>Experiencia móvil</strong><span>Concepto de organización de productos.</span></figcaption></figure></div>
+      <div class="col-md-6 col-lg-4"><figure class="gallery-card"><img src="{{ url_for('static', filename='images/funciones-plataforma.jpeg') }}" alt="Infografía de funciones propuestas para la plataforma" loading="lazy"><figcaption><strong>Funciones propuestas</strong><span>Recomendaciones, prueba virtual y reportes.</span></figcaption></figure></div>
+      <div class="col-md-6 col-lg-4"><figure class="gallery-card"><img src="{{ url_for('static', filename='images/identidad-visual-belleza.jpeg') }}" alt="Referencia gráfica de identidad visual para belleza" loading="lazy"><figcaption><strong>Identidad visual</strong><span>Inspiración para una experiencia centrada en la belleza.</span></figcaption></figure></div>
+    </div>
+  </div>
+</section>
+
+<section id="investigacion" class="section-pad">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">TRABAJO DE CAMPO · ESTUDIO DE MERCADO</span><h2>Escuchar para diseñar mejor.</h2>
+      <p>La investigación combina una encuesta de 100 respuestas y tres entrevistas a establecimientos. Los resultados siguientes se transcribieron de las capturas compartidas por el equipo.</p>
+    </div>
+    <div class="stats-banner">
+      <div><strong>100</strong><span>respuestas de encuesta</span></div><div><strong>3</strong><span>entrevistas transcritas</span></div><div><strong>3</strong><span>sectores explorados</span></div><div><strong>68%</strong><span>aceptación o interés potencial en IA</span></div>
+    </div>
+    <div class="row g-4 mt-3">
+      <div class="col-lg-6"><article class="data-card h-100"><span class="mini-label">ENCUESTA / 01</span><h3>Productos comprados con mayor frecuencia</h3><p class="muted">Porcentaje de respuestas</p>
+        <div class="bar-row"><div><span>Ropa</span><b>38%</b></div><div class="bar-track"><i style="width:38%"></i></div></div>
+        <div class="bar-row"><div><span>Todas las categorías</span><b>26%</b></div><div class="bar-track"><i style="width:26%"></i></div></div>
+        <div class="bar-row"><div><span>Cuidado facial</span><b>15%</b></div><div class="bar-track"><i style="width:15%"></i></div></div>
+        <div class="bar-row"><div><span>Maquillaje</span><b>14%</b></div><div class="bar-track"><i style="width:14%"></i></div></div>
+        <div class="bar-row"><div><span>Accesorios</span><b>7%</b></div><div class="bar-track"><i style="width:7%"></i></div></div>
+        <p class="interpretation">Lectura: la ropa es la categoría individual más seleccionada. La respuesta “todas las categorías” respalda explorar una experiencia integrada.</p>
+      </article></div>
+      <div class="col-lg-6"><article class="data-card h-100"><span class="mini-label">ENCUESTA / 02</span><h3>Dificultad para elegir productos adecuados</h3><p class="muted">Porcentaje de respuestas</p>
+        <div class="bar-row"><div><span>Muy difícil</span><b>21%</b></div><div class="bar-track"><i style="width:21%"></i></div></div>
+        <div class="bar-row"><div><span>Difícil</span><b>24%</b></div><div class="bar-track"><i style="width:24%"></i></div></div>
+        <div class="bar-row"><div><span>Regular</span><b>34%</b></div><div class="bar-track"><i style="width:34%"></i></div></div>
+        <div class="bar-row"><div><span>Fácil</span><b>15%</b></div><div class="bar-track"><i style="width:15%"></i></div></div>
+        <div class="bar-row"><div><span>Muy fácil</span><b>6%</b></div><div class="bar-track"><i style="width:6%"></i></div></div>
+        <p class="interpretation">Lectura: el 45% respondió “difícil” o “muy difícil”, señalando una oportunidad para mejorar la orientación al elegir productos.</p>
+      </article></div>
+      <div class="col-lg-6"><article class="data-card h-100"><span class="mini-label">ENCUESTA / 03</span><h3>Interés en reunir productos en una plataforma</h3>
+        <div class="donut-layout"><div class="donut donut-67"><span>67%<small>Sí</small></span></div><div class="legend"><p><i class="dot pink"></i>Sí <b>67%</b></p><p><i class="dot blush"></i>Tal vez <b>18%</b></p><p><i class="dot pale"></i>No <b>15%</b></p></div></div>
+        <p class="interpretation">Lectura: 67 de cada 100 encuestados expresaron interés en encontrar varias categorías de productos en un solo lugar.</p>
+      </article></div>
+      <div class="col-lg-6"><article class="data-card h-100"><span class="mini-label">ENCUESTA / 04</span><h3>Aceptación de una plataforma con IA</h3>
+        <div class="donut-layout"><div class="donut donut-47"><span>47%<small>Sí</small></span></div><div class="legend"><p><i class="dot pink"></i>Sí <b>47%</b></p><p><i class="dot blush"></i>Tal vez <b>21%</b></p><p><i class="dot pale"></i>No <b>32%</b></p></div></div>
+        <p class="interpretation">Lectura: el 68% respondió sí o tal vez. El 32% respondió que no, por lo que conviene mantener búsquedas tradicionales y explicar el uso de la IA.</p>
+      </article></div>
+      <div class="col-lg-6"><article class="data-card h-100"><span class="mini-label">ENCUESTA / 05</span><h3>Recomendaciones que más interesan</h3>
+        <div class="bar-row"><div><span>Todas las categorías</span><b>36%</b></div><div class="bar-track"><i style="width:36%"></i></div></div>
+        <div class="bar-row"><div><span>Ropa y combinaciones</span><b>30%</b></div><div class="bar-track"><i style="width:30%"></i></div></div>
+        <div class="bar-row"><div><span>Cuidado facial</span><b>15%</b></div><div class="bar-track"><i style="width:15%"></i></div></div>
+        <div class="bar-row"><div><span>Maquillaje</span><b>11%</b></div><div class="bar-track"><i style="width:11%"></i></div></div>
+        <div class="bar-row"><div><span>Accesorios</span><b>8%</b></div><div class="bar-track"><i style="width:8%"></i></div></div>
+        <p class="interpretation">Lectura: se valora tanto la integración de categorías como las combinaciones de ropa y estilo.</p>
+      </article></div>
+      <div class="col-lg-6"><article class="data-card h-100"><span class="mini-label">ENCUESTA / 06</span><h3>Factores de elección</h3>
+        <div class="bar-row"><div><span>Calidad</span><b>51%</b></div><div class="bar-track"><i style="width:51%"></i></div></div>
+        <div class="bar-row"><div><span>Precio</span><b>22%</b></div><div class="bar-track"><i style="width:22%"></i></div></div>
+        <div class="bar-row"><div><span>Recomendaciones personalizadas</span><b>12%</b></div><div class="bar-track"><i style="width:12%"></i></div></div>
+        <div class="bar-row"><div><span>Opiniones de usuarios</span><b>8%</b></div><div class="bar-track"><i style="width:8%"></i></div></div>
+        <div class="bar-row"><div><span>Variedad</span><b>7%</b></div><div class="bar-track"><i style="width:7%"></i></div></div>
+        <p class="interpretation">Lectura: calidad y precio suman el 73%; conviene mostrar información clara y verificable sobre ambos factores.</p>
+      </article></div>
+      <div class="col-lg-6"><article class="data-card h-100"><span class="mini-label">ENCUESTA / 07</span><h3>Frecuencia de compra</h3>
+        <div class="bar-row"><div><span>Cada varios meses</span><b>34%</b></div><div class="bar-track"><i style="width:34%"></i></div></div>
+        <div class="bar-row"><div><span>Una vez al mes</span><b>27%</b></div><div class="bar-track"><i style="width:27%"></i></div></div>
+        <div class="bar-row"><div><span>Una vez por semana</span><b>15%</b></div><div class="bar-track"><i style="width:15%"></i></div></div>
+        <div class="bar-row"><div><span>Cada 15 días</span><b>12%</b></div><div class="bar-track"><i style="width:12%"></i></div></div>
+        <div class="bar-row"><div><span>Casi nunca</span><b>12%</b></div><div class="bar-track"><i style="width:12%"></i></div></div>
+      </article></div>
+      <div class="col-lg-6"><article class="data-card h-100"><span class="mini-label">ENCUESTA / 08</span><h3>Lugar principal de compra</h3>
+        <div class="bar-row"><div><span>Tiendas físicas</span><b>58%</b></div><div class="bar-track"><i style="width:58%"></i></div></div>
+        <div class="bar-row"><div><span>Tiendas virtuales</span><b>20%</b></div><div class="bar-track"><i style="width:20%"></i></div></div>
+        <div class="bar-row"><div><span>Redes sociales</span><b>13%</b></div><div class="bar-track"><i style="width:13%"></i></div></div>
+        <div class="bar-row"><div><span>Aplicaciones de compras</span><b>9%</b></div><div class="bar-track"><i style="width:9%"></i></div></div>
+        <p class="interpretation">Lectura: la compra física sigue siendo predominante entre las personas encuestadas. La experiencia digital debe generar confianza.</p>
+      </article></div>
+    </div>
+    <p class="small muted mt-4">Fuente: capturas del resumen de Google Forms compartidas por el equipo. Los porcentajes corresponden a las gráficas visibles; se deben contrastar con el archivo completo de respuestas antes de usarlos como resultados definitivos.</p>
+  </div>
+</section>
+
+<section id="entrevistas" class="section-pad section-soft">
+  <div class="container">
+    <div class="section-heading"><span class="eyebrow">TRABAJO DE CAMPO / ENTREVISTAS</span><h2>Lo que cuentan los establecimientos.</h2><p>Transcripciones editadas para mejorar la lectura, conservando el sentido de las respuestas. Los fragmentos poco claros se indican como pendientes de verificación.</p></div>
+    <div class="accordion interview-accordion" id="interviews">
+      <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#gef" aria-expanded="true" aria-controls="gef">01 · GEF — moda y ropa</button></h3>
+        <div id="gef" class="accordion-collapse collapse show" data-bs-parent="#interviews"><div class="accordion-body">
+          <p><strong>Entrevistada:</strong> Daniela Álvarez. <strong>Cargo:</strong> promotora de ventas.</p>
+          <p><strong>Atención y venta.</strong> Se recibe al cliente, se identifican sus necesidades, se asesora y se realiza la venta y facturación.</p>
+          <p><strong>Elección de prendas.</strong> Se pregunta por la necesidad, la ocasión, el clima y la referencia que busca el cliente.</p>
+          <p><strong>Control.</strong> Se mencionan computadores e indicadores KPI para consultar el valor por factura y el monto pagado. La herramienta exacta de inventario queda por confirmar.</p>
+          <p><strong>Dificultades en línea.</strong> El cliente no siempre puede probarse la prenda y verificar la talla o el ajuste.</p>
+          <p><strong>Uso de IA.</strong> La entrevistada respondió afirmativamente y destacó la posibilidad de acceder a recomendaciones a cualquier hora.</p>
+          <div class="finding"><strong>Hallazgo:</strong> asesoría de prendas y looks, orientación sobre tallas y acceso fuera del horario comercial.</div>
+        </div></div>
+      </div>
+      <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bella" aria-expanded="false" aria-controls="bella">02 · Bella Piel — cuidado facial</button></h3>
+        <div id="bella" class="accordion-collapse collapse" data-bs-parent="#interviews"><div class="accordion-body">
+          <p><strong>Entrevistado:</strong> nombre por confirmar. <strong>Cargo:</strong> director técnico, según la transcripción aproximada.</p>
+          <p><strong>Atención y venta.</strong> Se recibe al cliente, se identifican sus necesidades, se asesora y se finaliza la venta.</p>
+          <p><strong>Recomendación.</strong> El personal recibe capacitación para reconocer tipos de piel y productos dirigidos a distintas necesidades.</p>
+          <p><strong>Control.</strong> Se usa un sistema digital y se hacen verificaciones físicas del inventario semanalmente.</p>
+          <p><strong>Dificultades en línea.</strong> La atención masiva puede ser menos personalizada y favorecer elecciones que no correspondan a las necesidades de la piel.</p>
+          <p><strong>Uso de IA.</strong> La respuesta fue “probablemente sí”, señalando que la tecnología debe incorporarse de manera natural.</p>
+          <div class="finding"><strong>Hallazgo:</strong> personalización responsable y orientación clara en productos para el cuidado facial.</div>
+        </div></div>
+      </div>
+      <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#renacer" aria-expanded="false" aria-controls="renacer">03 · Renacer by Tina — maquillaje</button></h3>
+        <div id="renacer" class="accordion-collapse collapse" data-bs-parent="#interviews"><div class="accordion-body">
+          <p><strong>Entrevistada:</strong> Valentina Ortegón. <strong>Cargo:</strong> encargada.</p>
+          <p><strong>Atención y venta.</strong> Atienden de forma presencial y virtual. En línea responden por Instagram y WhatsApp, asesoran y ofrecen alternativas.</p>
+          <p><strong>Tonos de maquillaje.</strong> A veces es difícil conocer todas las tonalidades; el emprendimiento intenta ofrecer opciones para distintos tonos de piel.</p>
+          <p><strong>Control.</strong> Utilizan un cuaderno de contabilidad para el registro diario y Excel para organizar el mes.</p>
+          <p><strong>Dificultades en línea.</strong> La competencia de precios y los descuentos de otras plataformas.</p>
+          <p><strong>Uso de IA.</strong> La entrevistada respondió que sí, porque podría ahorrar tiempo en la búsqueda de productos y ayudar a encontrarlos.</p>
+          <div class="finding"><strong>Hallazgo:</strong> apoyo para elegir tonos y localizar productos, con potencial ahorro de tiempo para el negocio.</div>
+        </div></div>
+      </div>
+    </div>
+    <div class="section-heading mt-5"><span class="eyebrow">CONCLUSIÓN DEL TRABAJO DE CAMPO</span><h3>¿Qué aprendimos?</h3></div>
+    <div class="row g-3">
+      <div class="col-md-4"><div class="insight-card"><span>01</span><h4>Personalizar importa</h4><p>Los tres sectores requieren orientación que tenga en cuenta necesidades y preferencias particulares.</p></div></div>
+      <div class="col-md-4"><div class="insight-card"><span>02</span><h4>La confianza es clave</h4><p>Las compras virtuales necesitan información clara sobre tallas, tonos, productos y precios.</p></div></div>
+      <div class="col-md-4"><div class="insight-card"><span>03</span><h4>La IA debe apoyar</h4><p>Puede complementar la asesoría humana, sin reemplazar el criterio profesional, especialmente en cuidado de la piel.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="bitacoras" class="section-pad">
+  <div class="container">
+    <div class="section-heading"><span class="eyebrow">EVIDENCIAS PENDIENTES DE INTEGRACIÓN</span><h2>Bitácoras y registro por municipio.</h2><p>El taller solicita documentación estructurada de los procesos observados y evidencias fotográficas justificadas. <span class="source-note">Estas evidencias deben agregarse con los archivos reales del equipo.</span></p></div>
+    <div class="row g-4">
+      <div class="col-md-4"><div class="evidence-card"><div class="evidence-number">01</div><h3>Bitácoras de observación</h3><p>Registrar fecha, lugar, objetivo, actividad observada, herramientas utilizadas, dificultades, hallazgos y conclusión.</p><span class="status-pill">Agregar documento real</span></div></div>
+      <div class="col-md-4"><div class="evidence-card"><div class="evidence-number">02</div><h3>Registro por municipio</h3><p>Organizar visitas y observaciones por municipio, por ejemplo Mosquera y Bogotá, solo si existen evidencias que lo confirmen.</p><span class="status-pill">Completar ubicaciones</span></div></div>
+      <div class="col-md-4"><div class="evidence-card"><div class="evidence-number">03</div><h3>Registro fotográfico</h3><p>Incluir imágenes autorizadas, fecha, descripción, lugar y justificación. Evitar mostrar datos personales sin permiso.</p><span class="status-pill">Adjuntar fotografías</span></div></div>
+    </div>
+    <div class="methodology mt-4"><h3>Metodología resumida</h3><p>Se combinaron datos cuantitativos de una encuesta (100 respuestas reportadas en las capturas) con información cualitativa de tres entrevistas a establecimientos de ropa, maquillaje y cuidado facial. Las entrevistas se organizaron por pregunta y se sintetizaron en hallazgos. Para fortalecer el informe se recomienda adjuntar el formulario completo, las bitácoras, las fechas, los criterios de selección y las evidencias originales.</p></div>
+  </div>
+</section>
+
+<section id="competencia" class="section-pad section-soft">
+  <div class="container">
+    <div class="section-heading"><span class="eyebrow">REFERENTES DEL MERCADO</span><h2>Un ecosistema con distintas especialidades.</h2><p>Los siguientes negocios sirven como referencias de competencia indirecta por categoría. No se afirma que todos tengan o carezcan de funciones de IA sin una verificación específica.</p></div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3"><article class="competitor-card"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=700&q=80" alt="Ropa y moda" loading="lazy"><div><span class="service-tag">Moda</span><h3>GEF</h3><p>Referencia para ropa, selección de prendas y experiencia de compra.</p></div></article></div>
+      <div class="col-sm-6 col-lg-3"><article class="competitor-card"><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=700&q=80" alt="Productos para el cuidado facial" loading="lazy"><div><span class="service-tag">Skincare</span><h3>Bella Piel</h3><p>Referencia de productos dermocosméticos y orientación de cuidado facial.</p></div></article></div>
+      <div class="col-sm-6 col-lg-3"><article class="competitor-card"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=700&q=80" alt="Maquillaje y cosméticos" loading="lazy"><div><span class="service-tag">Belleza</span><h3>Renacer by Tina</h3><p>Emprendimiento de maquillaje entrevistado para conocer su operación.</p></div></article></div>
+      <div class="col-sm-6 col-lg-3"><article class="competitor-card"><img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=700&q=80" alt="Productos de skincare" loading="lazy"><div><span class="service-tag">Skincare</span><h3>Medipiel</h3><p>Referencia adicional del sector de cuidado de la piel.</p></div></article></div>
+      <div class="col-sm-6 col-lg-3"><article class="competitor-card"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=80" alt="Productos de belleza" loading="lazy"><div><span class="service-tag">Maquillaje</span><h3>Aruma</h3><p>Referencia para variedad de productos y experiencia de compra en belleza.</p></div></article></div>
+    </div>
+    <div class="differentiator mt-4"><div><span class="eyebrow">PROPUESTA DE VALOR</span><h3>Varias categorías, una experiencia.</h3></div><p>AURABEAUTY busca integrar moda, maquillaje, cuidado facial y accesorios con recomendaciones personalizadas. Su diferenciación dependerá de la calidad de los datos, el catálogo disponible, la utilidad real de las recomendaciones y una experiencia confiable.</p></div>
+  </div>
+</section>
+
+<section id="documentos" class="section-pad">
+  <div class="container">
+    <div class="section-heading"><span class="eyebrow">CENTRO DE DOCUMENTOS</span><h2>La investigación debe poder revisarse.</h2><p>Agrega aquí los documentos públicos aprobados por el equipo. En este prototipo los botones son una guía para organizar archivos; aún no apuntan a documentos reales.</p></div>
+    <div class="document-grid">
+      <div class="document-item"><span class="doc-icon">PDF</span><div><strong>Informe de trabajo de campo</strong><small>Metodología, resultados y conclusiones</small></div><span class="doc-status">Pendiente</span></div>
+      <div class="document-item"><span class="doc-icon">CSV</span><div><strong>Respuestas de la encuesta</strong><small>Archivo anonimizado para análisis</small></div><span class="doc-status">Pendiente</span></div>
+      <div class="document-item"><span class="doc-icon">DOC</span><div><strong>Bitácoras de observación</strong><small>Registros por visita o municipio</small></div><span class="doc-status">Pendiente</span></div>
+      <div class="document-item"><span class="doc-icon">IMG</span><div><strong>Evidencias fotográficas</strong><small>Imágenes autorizadas y contextualizadas</small></div><span class="doc-status">Pendiente</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="section-pad contact-section">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5"><span class="eyebrow eyebrow-light">HABLEMOS</span><h2>¿Tienes una idea para crear?</h2><p class="contact-copy">Escríbenos para conversar sobre el proyecto, el trabajo de campo o las soluciones digitales de AURABEAUTY.</p>
+        <div class="contact-detail"><span>✉</span><div><small>Correo</small><a href="mailto:contacto.aurasoft.com@gmail.com">contacto.aurasoft.com@gmail.com</a></div></div>
+        <div class="contact-detail"><span>◎</span><div><small>Instagram</small><a href="https://www.instagram.com/aurasoft.studio/" target="_blank" rel="noopener noreferrer">@aurasoft.studio</a></div></div>
+        <div class="contact-detail"><span>☎</span><div><small>WhatsApp</small><a href="https://wa.me/573106074491" target="_blank" rel="noopener noreferrer">+57 310 607 4491</a><br><a href="https://wa.me/573112964935" target="_blank" rel="noopener noreferrer">+57 311 296 4935</a><br><a href="https://wa.me/573214643246" target="_blank" rel="noopener noreferrer">+57 321 464 3246</a></div></div>
+        <div class="contact-detail"><span>⌖</span><div><small>Ubicación de referencia</small><p class="mb-0">Mosquera, Cundinamarca, Colombia<br><small>No se ha confirmado una dirección física de la empresa.</small></p></div></div>
+      </div>
+      <div class="col-lg-7">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}{% for category, message in messages %}<div class="alert alert-{{ category }}" role="alert">{{ message }}</div>{% endfor %}{% endif %}
+        {% endwith %}
+        <form class="contact-form" action="{{ url_for('contacto') }}" method="post">
+          <h3>Envíanos un mensaje</h3><p class="muted">Los campos con * son obligatorios.</p>
+          <div class="row g-3">
+            <div class="col-md-6"><label for="nombre" class="form-label">Nombre *</label><input class="form-control" id="nombre" name="nombre" autocomplete="name" required maxlength="100"></div>
+            <div class="col-md-6"><label for="correo" class="form-label">Correo electrónico *</label><input class="form-control" type="email" id="correo" name="correo" autocomplete="email" required maxlength="150"></div>
+            <div class="col-12"><label for="tema" class="form-label">Tema de interés</label><select class="form-select" id="tema" name="tema"><option value="Información general">Información general</option><option value="AURABEAUTY">AURABEAUTY</option><option value="Servicios de software">Servicios de software</option><option value="Investigación de mercado">Investigación de mercado</option></select></div>
+            <div class="col-12"><label for="mensaje" class="form-label">Mensaje *</label><textarea class="form-control" id="mensaje" name="mensaje" rows="4" required maxlength="2000"></textarea></div>
+            <div class="col-12"><div class="form-check"><input class="form-check-input" type="checkbox" id="consentimiento" name="consentimiento" required><label class="form-check-label small" for="consentimiento">Acepto que mis datos se usen únicamente para responder esta solicitud. *</label></div></div>
+            <div class="col-12"><button class="btn btn-brand btn-lg w-100" type="submit">Enviar mensaje ↗</button></div>
+          </div>
+          <p class="small muted mt-3 mb-0">Prototipo académico: el formulario guarda los datos en un archivo local del servidor. Antes de publicarlo, debe definirse un aviso de privacidad y controles de seguridad adecuados.</p>
+        </form>
+      </div>
+    </div>
+    <div class="map-wrap mt-5"><div class="map-heading"><div><span class="eyebrow eyebrow-light">MAPA</span><h3>Zona de investigación</h3></div><p>Mapa de referencia de Mosquera, Cundinamarca. No representa una sede confirmada de AURABEAUTY.</p></div><iframe title="Mapa de Mosquera, Cundinamarca" src="https://maps.google.com/maps?q=Mosquera%2C%20Cundinamarca%2C%20Colombia&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+  </div>
+</section>
+
+<footer class="site-footer"><div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3"><a class="navbar-brand brand" href="#inicio"><span class="brand-mark">A</span> AURABEAUTY<span class="brand-dot">.</span></a><p class="mb-0">Tecnología con propósito · Proyecto académico 2026</p><a href="#inicio" class="back-top">Volver arriba ↑</a></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
